@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <title>十年后 - 与世界分享你的追梦历程</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" Content="梦想,梦想清单,人生,经验,成长,交流,计划,目标,思考,时间轴,10years,成为怎样的人,个人管理">
+    <meta name="Description" Content="「十年后」是一个基于梦想的经验交流社区。 在这里，你可以自由的分享关于未来梦想的真实想法，并探索更多有趣的梦想，结交志同道合的人。">
+
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="login" src="js/view/index.js"></script>
+
+    <!-- [if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <! [endif] -->
+
+    <link rel="stylesheet" href="css/index.css"/>
+    
+</head>
+<body>
+    <div class="body-full-screen h600">
+    	<div class="body-blur">
+    		<div class="body-content h-20">
+    			<div id="ty_full_page">
+    				<!-- login index begin -->
+    				<div class="ty-login-section ty-login-bg ty-login-index bg-mask login-test">
+    					<!-- <div class="fp-tableCell"> -->
+    						<!-- <div class="slimScrollDiv"> -->
+    							<!-- <div class="fp-scrollable"> -->
+    								<div class="ty-login-index-padding">
+    									<div class="ty-login-index-content">
+    										<div class="ty-login-index-header">
+    											<h1>
+    												<a href="/">十年后</a>
+    											</h1>
+    											<div class="ty-login-index-fast-link">
+    												<a id="ty_fast_link_btn" class="ty-login-fast-link-btn" href="javascript:void(0);" data-action="register">注册</a>
+    												<a href="/about" class="ty-a-hover-underline"
+    												target="_blank">关于我们</a>
+    											</div>
+    									</div>
+    									<div class="ty-login-index-form-content">
+    										<div class="ty-login-index-form-title">与世界分享你的追梦经历</div>
+    										<form id="ty_sign_in_form" class="ty-login-index-form ty-active" data-action="sign-in" autocomplete="off">
+    											<div class="ty-login-index-form-group">
+    												<input id="ty_user_name" type="text" placeholder="邮箱或手机号" tabindex="1" data-type="mailOrPhone" spellcheck="false" autocomplete="off"/>
+                                                    <div class="ty-input-tool-tip mail">
+                                                        <span class="ty-input-tip-mail-error">
+                                                            邮箱或手机号格式不正确
+                                                        </span>
+                                                        <span class="ty-input-tip-mail-empty">
+                                                            邮箱或手机号不能为空
+                                                        </span>
+                                                    </div>
+    											</div>
+    											<div class="ty-login-index-form-group">
+    												<input id="ty_password_hidden" ty="password">
+    												<input id="ty_password" type="password" placeholder="密码" tabindex="2" data-type="pwd" autocomplete="off"/>
+    												<!-- <span class="ty-input-tool-tip tooltipstered ty-tool-tip-active" data-short="密码不能低于6位" data-empty="密码不能为空" data-long="密码不能超过16位"></span> -->
+                                                    <div class="ty-input-tool-tip pwd">
+                                                        <span class="ty-input-tip-pwd-empty">
+                                                            密码不能为空
+                                                        </span>
+                                                        <span class="ty-input-tip-pwd-short">
+                                                            密码不能低于6位
+                                                        </span>
+                                                        <span class="ty-input-tip-pwd-long">
+                                                            密码不能超过16位
+                                                        </span>
+                                                    </div>
+    											</div>
+    											<div class="ty-login-index-form-check">
+    												<label>
+    													<input id="ty_remember_me" type="checkbox" tabindex="3" checked="checked"/> 记住我
+    												</label>
+    												<a id="ty_forget_password" href="javascript:void(0);" class="ty-a-hover-underline">忘记密码?</a>
+    											</div>
+    											<button class="ty-login-btn" id="ty_sign_in_btn">
+    												登录
+    												<i class="fa fa-chevron-down"></i>
+    											</button>
+    										</form>
+    										<div id="ty_register_form" class="ty-login-index-form" data-action="register">
+    											<div class="ty-login-index-form-group">
+    												<input id="ty_register_name" type="text" placeholder="邮箱" data-type="mail"/>
+    												<div class="ty-input-tool-tip mail sign">
+                                                        <span class="ty-input-tip-mail-error">
+                                                            邮箱格式不正确
+                                                        </span>
+                                                        <span class="ty-input-tip-mail-empty">
+                                                            邮箱不能为空
+                                                        </span>
+                                                    </div>
+    											</div>
+    											<div class="ty-login-index-form-group">
+    												<input id="ty_register_pwd_hidden" type="password" >
+    												<input id="ty_register_pwd" placeholder="密码" data-type="pwd">
+    												<span class="ty-input-tool-tip js-register-password" data-short="密码不能低于6位" data-empty="密码不能为空" data-long="密码不能超过16位"></span>
+    											</div>
+    											<button class="ty-login-btn" id="ty_register_btn">
+    												去未来
+
+    											</button>
+    										</div>
+    										<div class="ty-login-index-third"></div>
+    									</div>
+    									<div class="ty-login-index-desc">
+    										<p>「十年后」是一个基于梦想的经验交流社区。</p>
+    										<p>在这里，你可以自由的分享关于未来梦想的真实想法，</p>
+    										<p>并探索更多有趣的梦想，结交志同道合的人。</p>
+    									</div>
+    								</div>
+    							</div>
+    							<a id="ty_login_next" href="javascript:void(0);" class="ty-login-next">
+    								<i class="fa fa-chevron-down"></i>
+    							</a>
+    						<!-- </div> -->
+    					<!-- </div> -->
+    				<!-- </div> -->
+    				<!-- login-index-end -->
+    			</div>
+    			 <!--<div class="ty-login-section ty-login-bg ty-login-history">section 2</div>-->
+    			<div class="ty-login-section ty-login-bg ty-login-timeline bg-mask login-test">
+    				<div id="ty_timeline" class="storyjs-embed" classname="storyjs-embed full-embed">
+    					<div id="storyjs-timeline" class="vco-timeline vco-storyjs vco-notouch">
+                            <div class="vco-container vco-main">
+                                <div class="vco-feature">
+                                    <div class="vco-slider">
+                                        <div class="slider-container-mask">
+                                            <div class="slider-container">
+                                                <div class="slider-item-container"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    				</div>
+    			</div>
+    			<!-- section 3 -->
+    			<div class="ty-login-section ty-login-bg ty-login-explore">
+    			<!-- <div class="fp-tableCell"> -->
+    				 <div class="ty-section-explore">
+                            <h2>探索更多有趣的梦想</h2>
+                            <div class="ty-explore-channel-animation">
+                                发现在
+                                <div id="ty_explore_channel_animation_ul" class="ty-explore-channel-animation-content">
+                                    <ul>
+                                        <li>
+
+                                            <a href="javascript:void(0);" class="ty-inline-block">十年后</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="ty-inline-block">人生</a>
+                                        </li>
+                                        <li >
+                                            <a href="javascript:void(0);" class="ty-inline-block">你好再见</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                的梦想家
+                            </div>
+                        </div>
+                        <!-- </div> -->
+    			</div>
+    			<!-- section 4 -->
+    			<div id="ty_login_explore" class="ty-login-section">
+    				<div class="ty-login-explore-content">
+    					<div id="ty_login_channel" class="ty-login-channel-panel"></div>
+    					
+    				</div>
+    				<div class="ty-login-footer">
+    				<div class="footer-content clearfix">
+    					<div class="footer-content-col">
+    						<h2>十年后</h2>
+    						<p>与世界分享你的追梦历程</p>
+    						<div class="footer-content-col-desc">
+    						「十年后」是一个基于梦想的经验交流社区。在这里，你可以自由的分享关于未来梦想的真实想法，并探索更多有趣的梦想，结交志同道合的人。
+    						</div>
+    					</div>
+    					<div class="footer-content-col">
+    						<div class="footer-content-col-title">关于我们</div>
+    						<ul class="footer-content-col-ul footer-hover-ul">
+    							<li>
+    								<a href="/about" target="_blank">关于十年后</a>
+    							</li>
+    							<li>
+    								<a href="/about#team" target="_blank">团队成员</a>
+    							</li>
+    							<li>
+    								<a href="/about#job" target="_blank">加入我们</a>
+    							</li>
+    							<li>
+    								<a href="/about#trueeula" target="_blank">用户协议</a>
+    							</li>
+    							<li>
+    								<a href="http://memory.10years.me" target="_blank">回到旧版</a>
+    							</li>
+    						</ul>
+    					</div>
+    					<div class="footer-content-col">
+    						<div class="footer-content-col-title">媒体报道</div>
+    						<ul class="footer-content-col-ul">
+    							<li>
+    								<a href="http://www.pingwest.com/demo/dream-can-be-social/" target="_blank">PingWest</a>
+    							</li>
+    							<li>
+    								<a href="http://cn.technode.com/post/2015-06-03/tenyearsdream/" target="_blank">动点科技</a>
+    							</li>
+    							<li>
+    								<a href="http://itjuzi.com/company/4770" target="_blank">IT桔子</a>
+    							</li>
+    							<li>
+    								<a href="http://www.cyzone.cn/a/20150120/268336.html" target="_blank">创业邦</a>
+    							</li>
+    							<li>
+    								<a href="http://www.iheima.com/news/2014/1124/147934.shtml" target="_blank">i黑马</a>
+    							</li>
+    						</ul>
+    					</div>
+    					<div class="footer-content-col">
+    						<div class="footer-content-col-title">下载应用</div>
+    						<div class="footer-content-download clearfix">
+    							<div class="footer-content-download-col">
+    								<div class="download-btn">
+    									<a href="//itunes.apple.com/cn/app/shi-nian-hou/id925240486" target="_blank">
+    										<i class="ty-icon-ios"></i>
+    										<span>iOS 版</span>
+    									</a>
+    								</div>
+    								<div class="download-btn">
+    									<a href="//android.myapp.com/myapp/detail.htm?apkName=me.tenyears.futureline" target="_blank">
+    										<i class="ty-icon-android"></i>
+    										<span>Android 版</span>
+    									</a>
+    								</div>
+    							</div>
+    							<div class="footer-content-download-col ty-qrcode">
+    								<img src="img/common/qrcode.png" alt="二维码" width="83" height="83">
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="footer-link">
+    					<ul class="clearfix">
+    						<li>
+    							<a href="http://weibo.com/10yearsme" target="_blank">
+    								<i class="ty-icon-weibo" title="微博"></i>
+    							</a>
+    						</li>
+    						<li>
+    							<div class="footer-link-wechat">
+    								<a href="javascript:void(0)">
+    									<i class="ty-icon-wechat" title="微信"></i>
+    								</a>
+    								<div class="footer-link-wechat-hover">
+    									<img src="img/common/shinianhou.jpg" alt width="90" height="90"/>
+    								</div>
+    							</div>
+    						</li>
+    						<li>
+    							<a href="http://site.douban.com/231517/" target="_blank">
+    								<i class="ty-icon-douban" title="豆瓣"></i>
+    							</a>
+    						</li>
+    					</ul>
+    				</div>
+    				<div class="footer-copyright">
+    					&copy; 2013 - 2015 
+    					<a href="//10years.me">10years.me</a>. 上海秦誓网络科技有限公司 All Rights Reserved. 
+    					<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备13021804号</a>
+    					<br>
+    					<br>
+    					<a href="http://www.upyun.com">
+    						<img src="https://www.upyun.com/assets/league/90X45.png"/>
+    					</a>&nbsp;
+    					<a href="http://www.oneapm.com">
+    						<img src="https://dn-oneapm.qbox.me/badge2xblue.png" height="45" />
+    					</a> 
+    				</div>
+    			</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <script src="/static/scripts/libs/require.js" data-main="/static/scripts/view/login.js"></script>
+    <script>
+        var ty = {
+            user: {
+                id: '' * 1,
+                name: '',
+                avatar: ''
+            }
+        };
+    </script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?4369d07da0778f546a77f0364314c80f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <div id="fp-nav" class="right">
+    	<ul>
+    		<li>
+    			<a href="#">
+    				<span></span>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#" class="active">
+    				<span></span>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<span></span>
+    			</a>
+    		</li>
+    		<li>
+    			<a href="#">
+    				<span></span>
+    			</a>
+    		</li>
+    	</ul>
+    </div>
+</body>
+</html>
