@@ -1,0 +1,800 @@
+body{
+	padding: 0; 
+	margin: 0;
+	background: #f4f4f4;
+}
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 13px;
+    vertical-align: baseline;
+    background: 0 0;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased; 
+    font-family: Arial,"Hiragino Sans GB","冬青黑","Microsoft YaHei","微软雅黑",SimSun,Helvetica,Tahoma,sans-serif;
+    display: block;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+    text-decoration: none;
+}
+p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*font-size: 13px;*/
+	vertical-align: baseline;
+	background: 0 0;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+	outline: 0;
+}
+a:active,
+a:hover,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #444;
+}
+.ty-nav {
+	position: fixed;
+	z-index: 50;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	/*background: #fff;*/
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+}
+.ty-nav-content {
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	width: auto;
+	padding: 0 30px;
+}
+.ty-nav-logo{
+	display: inline-block;
+	float: left;
+}
+.ty-nav-logo {
+	line-height: 50px;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+}
+.ty-nav-logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+}
+.ty-nav-logo-content {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	background: url(/image/logo.png) no-repeat;
+	background-size: 40px 40px;
+}
+
+.ty-nav-btn-content {
+	display: inline-block;
+	float: left;
+	width: 320px;
+	height: 50px;
+	overflow: hidden;
+}
+.ty-nav-btn-content>a,
+.ty-nav-btn-content>div {
+	display: inline-block;
+	width: 80px;
+	height: 48px;
+	line-height: 50px;
+	text-align: center;
+	/*border-bottom: 2px solid #fff;*/
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	font-size: 13px;
+	cursor: pointer;
+	float: left;
+	opacity: .6;
+	color: #fff;
+}
+/*.ty-nav-btn-content>.ty-nav-btn:hover {
+	background: #f7f7f7;
+	border-bottom-color: #f7f7f7;
+}*/
+.ty-nav-btn-content>a:hover,
+.ty-nav-btn-content>div:hover {
+	opacity: 1;
+	color:#00B4FF;
+}
+/*.ty-nav-btn-content a.ty-nav-explore { background: #fff;border-bottom-color: #00B4FF; opacity: 1 }*/
+.ty-nav-btn-content a.ty-nav-explore:hover { border-bottom-color: #00B4FF }
+
+
+.ty-nav-login-content {
+	display: inline-block;
+	float: right;
+	height: 100%;
+	width: 160px;
+}
+.ty-nav-login-content a {
+	display: inline-block;
+	width: 44%;
+	text-align: center;
+	font-size: 13px;
+	height: 34px;
+	margin-top: 9px;
+	line-height: 34px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+}
+a.ty-nav-login-btn:link {
+	background: #00B4FF;
+	color: #fff;
+}
+
+.ty-container {
+    display: block;
+    padding-top: 50px;
+    position: relative;
+}
+.ty-profile {
+    position: relative;
+ 	width: 100%;
+  	height: 900px;
+   	background: center 0 no-repeat;
+    background-size: cover
+}
+.ty-profile-bg,
+.ty-profile-motto {
+ 	width: 100%;
+  	height: 550px;
+  	position: absolute;
+    top: -50px;
+ }
+ .bg-mask:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .4);
+	z-index: 10;
+}
+.ty-profile-bg { background: center center/cover no-repeat }
+.ty-profile-motto { text-align: center; z-index: 10 }
+.ty-profile-motto-container {
+ 	display: inline-block;
+  	font-size: 25px; 
+  	position: relative; 
+  	top:50%;
+   	-webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0); 
+    -o-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0); 
+    z-index: 12;
+    color: rgba(255, 255, 255, .6); 
+    padding: 2px;
+    border-bottom: 1px solid transparent;
+    text-align: justify;
+    letter-spacing: 3px;
+    line-height: 1.4;
+    max-width: 600px; 
+}
+.ty-profile-modify-btn i {
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+    line-height: 0;
+}
+/*.ty-profile-motto-container span { background: 0 0 !important }*/
+.ty-profile-motto-container:focus { border-color: rgba(255, 255, 255, .3) }
+
+.ty-go-top:hover { background: #e5e5e5 }
+.ty-go-top .arrow { position: absolute; width: 0; height: 0; top: -1px; border: 9px solid transparent; border-bottom-color: #aaa; left: 11px }
+.ty-go-top .stick { position: absolute; width: 8px; height: 14px; top: 15px; border-radius: 1px; background-color: #aaa; left: 16px }
+.ty-go-top-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    background: #e2e2e2;
+    z-index: 99;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: hover .3s;
+    -moz-transition: hover .3s;
+    -ms-transition: hover .3s;
+    -o-transition: hover .3s;
+    transition: hover .3s;
+}
+
+.ty-profile-content{ color: #333; left: 0; background: #fff; position: absolute }
+.ty-profile-content{ width: 100%;height:164px;bottom:258px;z-index: 22; border-bottom: 1px solid #eee }
+.ty-profile-content-row:first-child { margin-bottom: 15px}
+.ty-profile-content-row { font-size: 13px; width: 100%; text-align: center; letter-spacing: 1px; margin:15px 0; min-height: 22px }
+.ty-profile-content-row h1 { font-size: 24px; margin: 0 0 15px; font-weight: 400; height: 26px }
+.ty-profile-modify-content{background: #fff;width: 100%;height: 100px}
+.ty-999 {
+    color: #999;
+}
+.ty-666 {
+    color: #666;
+}
+.ty-profile-modify-hide.ty-profile-modify-border-bottom{
+    font-size: 13px;
+}
+.ty-profile-desc-content {
+    font-size: 14px;
+    margin: 12px 0;
+}
+.ty-profile-avatar-content { height: 74px; width: 74px; position: absolute; left: 50%; margin-left: -37px; top: -37px }
+.ty-profile-avatar { width: 74px; height: 74px; border: 2px solid rgba(255, 255, 255, .8); -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; overflow: hidden; margin: 0 auto; z-index: 999; position: relative }
+.ty-profile-avatar img { width: 100%; height: 100% }
+.ty-profile-avatar:hover{ -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0) }
+
+
+
+.ty-profile-modify-btn-container { position:absolute; right: 40px; top: 10px; overflow: hidden;z-index: 30 }
+.ty-profile-modify-btn-container.ty-active .ty-active-hide { display: inline-block }
+.ty-profile-modify-btn { display: inline-block; color: #666; border: 1px solid #ddd; background: #f4f4f4; font-size: 13px; padding: 10px 12px; border-radius: 4px; margin: 0 3px; overflow: hidden; -webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; -ms-transition: all .3s ease-in-out; -o-transition: all .3s ease-in-out; transition: all .3s ease-in-out }
+.ty-profile-modify-btn.ty-profile-modify-save { border-color: #00B4FF; background: #00B4FF; color: #fff }
+.ty-profile-modify-btn.ty-active-hide { display: none }
+.ty-profile-modify-btn i { font-size: 18px; position: relative; top: 3px; margin-right: 3px; line-height: 0 }
+.ty-profile-modify-btn:hover { color: #00B4FF }
+.ty-profile-modify-btn.ty-profile-modify-save:hover { color: #fff }
+
+
+
+.ty-profile-count { color: #333; left: 0; background: #fff; position: absolute }
+.ty-profile-count { width: 100%; bottom: 210px; height: 48px; z-index: 11; border-top: 1px solid #ccc }
+.ty-profile-count:after { content: ''; position: absolute; left: 0; top: 48px; width: 100%; height: 220px; background: -webkit-gradient(linear, 0 0, 100% 0, from(#3bb1dd), to(#fec454)); background: -moz-linear-gradient(left, #3BB1DD 0, #FEC454 100%); z-index: 9 }
+.ty-profile-count ul { width: 560px; height: 40px; font-size: 13px; margin: 8px auto }
+.ty-profile-count ul li { display: inline-block; width: 100px; height: 100%; text-align: center }
+.ty-profile-count li a { display: block; width: 100%; text-align: center; height: 100% }
+.ty-profile-count p { line-height: 18px }
+.ty-profile-count-desc { color:#999;}
+.ty-profile-count-detail {
+    font-weight: 700;
+    color:#111;
+    font-size: 16px;
+}
+
+
+
+
+.ty-dream-news-container {
+    height: auto;
+    margin-top: 10px;
+    width: 100%;
+    position:relative;
+    overflow: hidden;
+}
+.ty-dream-news-container .containers {
+    width: 300%;
+    height: 100%;
+}
+.ty-dream-news-container .containers .container.ty-active {
+    height: 100%;
+    opacity: 1;
+}
+.ty-dream-news-container .containers .container {
+    width: 33.33%;
+    float: left;
+    /*opacity: 0;*/
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.ty-profile-dream-content {
+    width: 960px;
+    margin: 30px auto 0;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.ty-profile-dream-left {
+    width: 600px;
+    float: left;
+    margin-right: 10px;
+}
+
+.ty-profile-tab {
+	display: block;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.07);
+    background: #fff;
+    overflow: hidden;
+}
+.ty-col-4{
+	position: relative;
+    float: left;
+    width: 33.33333%;
+}
+.ty-profile-tab a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    color: #666;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+}
+.ty-profile-tab a:hover{
+    color: #00B4FF;
+}
+.ty-profile-tab a.ty-active:after {
+	content:"";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -14px;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+    background: #00B4FF;
+}
+.ty-profile-all-container { width: 100%; min-height: 300px; overflow: hidden }
+.ty-profile-all-container .ty-profile-containers { min-height:100%;width: 300%; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; -ms-transition: all .5s ease-in-out; -o-transition: all .5s ease-in-out; transition: all .5s ease-in-out }
+.ty-profile-all-container .ty-profile-containers .ty-profile-container { min-height: 100%;/* height: 500px; *//*opacity: .2;*/ -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; -ms-transition: all .5s ease-in-out; -o-transition: all .5s ease-in-out; transition: all .5s ease-in-out }
+/*.ty-profile-all-container .ty-profile-containers .ty-profile-container.ty-active { opacity: 1; height: auto }*/
+
+.ty-profile-dream-feeds {
+	height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.ty-feed-item{
+	/*height: 200px*/;
+	position: relative;
+	max-width: 100%;
+    margin-bottom: 20px;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.07);
+}
+.ty-feed-item .ty-feed-header{position: relative;padding: 10px 20px;height: 42px}
+.ty-feed-item .ty-feed-header .ty-feed-user{position: relative;width: 100%;height: 100%}
+.ty-feed-header .ty-feed-user .ty-user-avatar {
+    width: 38px;
+    height: 38px;
+    float: left;
+    margin: 5px 8px 5px 0;
+}
+.ty-user-avatar a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.ty-user-avatar a img{
+    width: 100%;
+    height: 100%;
+}
+.ty-feed-header .ty-feed-user .ty-feed-user-name {
+    font-size: 15px;
+    display: block;
+    font-weight: 700;
+    line-height: 30px;
+    height: 30px;
+    padding-left: 38px;
+    margin-left: 12px;
+    text-align: left;
+}
+.ty-user-name-link:link{color: #4093c6}
+.ty-feed-header .ty-feed-user .ty-feed-time {
+    font-size: 12px;
+    display: block;
+    color: #999;
+    padding-left: 38px;
+    margin-left: 12px;
+    text-align: left;
+}
+.ty-feed-header .ty-feed-dream {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: inline-block;
+}
+.ty-feed-dream.ty-process a{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 9px 12px 8px 35px;
+    transition: all .3s ease-in-out;  
+}
+.ty-feed-dream.ty-process a:hover{
+    border: 1px solid #09f;  
+}
+.ty-feed-dream.ty-process a:link{
+    color:#09f;  
+}
+.ty-feed-dream a i {
+    position: absolute;
+    font-size: 24px;
+    left: 10px;
+    top: 4px;
+    color:#09f; 
+}
+
+.ty-feed-item .ty-feed-body {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px 15px;
+    margin-top: 10px;
+    border-bottom: 2px solid #f6f5f6;
+}
+.ty-feed-item .ty-feed-body .ty-feed-mood {position: relative;}
+.ty-feed-item .ty-feed-body .ty-feed-content {
+    font-size: 14px;
+    line-height: 1.7;
+    word-break: break-all;
+    text-align: justify;
+    color: #333;
+    margin-top: 10px;
+}
+
+.ty-feed-item .ty-feed-footer {
+    height: 40px;
+    position: relative;
+    z-index: 20;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle {
+    display: block;
+    padding: 0 15px;
+    height: 100%;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle {
+    float: left;
+    height: 100%;
+    line-height: 40px;
+    width: 80px;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle a {
+    display: block;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+    position: relative;
+    font-size: 15px;
+    color: #666;
+    margin: 0 5px;
+    line-height: 38px;
+    text-align: center;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle a i {
+    position: absolute;
+    font-size: 20px;
+    left: 6px;
+    top: 9px;
+    color: #bbb;
+    transition: all .3s ease-in-out;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle .ty-handle-more {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    z-index: -1;
+    width: 80px;
+    top: 35px;
+    left: -20px;
+    background: #fff;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transform: translate3d(0,-5px,0);
+    -moz-transform: translate3d(0,-5px,0);
+    -ms-transform: translate3d(0,-5px,0);
+    -o-transform: translate3d(0,-5px,0);
+    transform: translate3d(0,-5px,0);
+    -webkit-transition: opacity .3s ease-in-out,transform .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out,transform .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out,transform .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out,transform .3s ease-in-out;
+    transition: opacity .3s ease-in-out,transform .3s ease-in-out;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle .ty-handle-more ul{
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle .ty-handle-more ul li:last-child {
+    border-top: 1px solid #ddd;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle .ty-handle-more ul li {
+    list-style: none;
+    height: 32px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle .ty-handle-more ul li a {
+    display: block;
+    padding: 0;
+    line-height: 32px;
+    text-align: center;
+    font-size: 13px;
+    height:100%;
+    color: #666;
+    margin: 0 5px;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle a:hover { color: #666 }
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle a:hover i { color: #aaa }
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle .ty-handle-more ul li:hover { background: #eee }
+
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle .ty-handle-more:before {
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    top: -7px; 
+    left: 0; 
+    cursor: pointer;
+}
+.ty-feed-item .ty-feed-footer .ty-feed-handle .ty-handle:hover .ty-handle-more {
+    opacity: 1;
+    z-index: 1;
+    height: auto;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 0 5px #ddd;
+    -moz-box-shadow: 0 0 5px #ddd;
+    box-shadow: 0 0 5px #ddd; 
+    -webkit-transform: translate3d(0, 0, 0); 
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); 
+    -o-transform: translate3d(0, 0, 0); 
+    transform: translate3d(0, 0, 0); 
+}
+
+
+.ty-loading {
+    width: 100%;
+    height: 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #666;
+    text-align: center;
+    line-height: 31px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    float: left;
+}
+.ty-loading img {
+	position: relative;
+	width: 14px;
+	height: 14px;
+	top: 2px;
+	margin-right: 5px;
+	font-size: 13px;
+}
+
+.ty-profile-dream-right {
+    width: 320px;
+    float: right;
+    text-align: left;
+}
+.ty-dream-info {
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    box-shadow: 0 1px 2px rgba(0,0,0,.07);
+}
+.ty-dream-info-title {
+    line-height: 14px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 2px solid #f6f5f6;
+    padding: 14px;
+    position: relative;
+}
+.ty-dream-info-row {
+    width: 100%;
+    height: auto;
+    min-height: 35px;
+    overflow: hidden;
+    clear: both;
+    line-height: 40px;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+}
+ .ty-dream-bg {
+    display: block;
+    border-radius: 5px;
+    background: center/cover no-repeat;
+    overflow: hidden;
+    margin: 15px;
+    height: 140px;
+    position: relative;
+}
+.ty-dream-info-row>div {
+    float: left;
+}
+.ty-dream-info-name {
+    color: #999;
+    vertical-align: middle;
+    width: 70px;
+    text-align: center;
+    font-size: 13px;
+}
+.ty-dream-info-text {
+    font-size: 13px;
+    min-height: 24px;
+    padding: 3px;
+    color: #444;
+    line-height: 34px;
+    width: 210px;
+}
+.ty-dream-info-text-text {
+    line-height: 26px;
+    padding: 8px 0;
+}
+.ty-dream-card-status.ty-success {
+    background: #09f;
+}
+.ty-dream-card-status {
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 700;
+    /*background: #fff;*/
+    color: #fff;
+    display: inline-block;
+}
+
+
+.ty-lh-0 {
+    line-height: 0;
+}
+.ty-dream-info-text input{
+    width: 100%;
+    padding: 3px;
+    vertical-align: middle;
+}
+.hidden {
+    display: none;
+}
+
+.ty-add-dream-private {
+    display: inline-block;
+    width: 54px;
+    height: 26px;
+    border-radius: 20px;
+    background: #ddd;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    -ms-transition: background .5s ease-in-out;
+    -o-transition: background .5s ease-in-out;
+    transition: background .5s ease-in-out;
+}
+.ty-cursor-default {
+    cursor: default;
+}
+.ty-add-dream-private-checkbox:checked~.ty-add-dream-private { background: #00B4FF }
+@keyframes tyAddDreamPrivateMove {
+    0% { -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0) }
+    20% { -webkit-transform: translate(1px, 0) scale(1.2, 1); -moz-transform: translate(1px, 0) scale(1.2, 1); -ms-transform: translate(1px, 0) scale(1.2, 1); -o-transform: translate(1px, 0) scale(1.2, 1); transform: translate(1px, 0) scale(1.2, 1) }
+    80% { -webkit-transform: translate(27px, 0) scale(1.2, 1); -moz-transform: translate(27px, 0) scale(1.2, 1); -ms-transform: translate(27px, 0) scale(1.2, 1); -o-transform: translate(27px, 0) scale(1.2, 1); transform: translate(27px, 0) scale(1.2, 1) }
+    100% { -webkit-transform: translate(28px, 0); -moz-transform: translate(28px, 0); -ms-transform: translate(28px, 0); -o-transform: translate(28px, 0); transform: translate(28px, 0) }
+}
+@keyframes tyAddDreamPrivateMoveBack {
+    0% { -webkit-transform: translate(28px, 0); -moz-transform: translate(28px, 0); -ms-transform: translate(28px, 0); -o-transform: translate(28px, 0); transform: translate(28px, 0) }
+    20% { -webkit-transform: translate(27px, 0) scale(1.2, 1); -moz-transform: translate(27px, 0) scale(1.2, 1); -ms-transform: translate(27px, 0) scale(1.2, 1); -o-transform: translate(27px, 0) scale(1.2, 1); transform: translate(27px, 0) scale(1.2, 1) }
+    80% { -webkit-transform: translate(1px, 0) scale(1.2, 1); -moz-transform: translate(1px, 0) scale(1.2, 1); -ms-transform: translate(1px, 0) scale(1.2, 1); -o-transform: translate(1px, 0) scale(1.2, 1); transform: translate(1px, 0) scale(1.2, 1) }
+    100% { -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0) }
+}
+.ty-add-dream-private-checkbox~.ty-add-dream-private>span { animation: tyAddDreamPrivateMoveBack .6s ease-in-out forwards }
+.ty-add-dream-private-checkbox:checked~.ty-add-dream-private>span { animation: tyAddDreamPrivateMove .6s ease-in-out forwards }
+.ty-add-dream-desc-container>span { color: #999; font-size: 14px; position: absolute; left: 0; opacity: 0; -webkit-transition: opacity .6s ease-in-out; -moz-transition: opacity .6s ease-in-out; -ms-transition: opacity .6s ease-in-out; -o-transition: opacity .6s ease-in-out; transition: opacity .6s ease-in-out }
+.ty-add-dream-private-checkbox:checked~.ty-add-dream-desc-container .checked,
+.ty-add-dream-private-checkbox~.ty-add-dream-desc-container .unchecked { opacity: 1 }
+.ty-add-dream-private-checkbox:checked~.ty-add-dream-desc-container .unchecked { opacity: 0 }
+span.ty-blue { color: #00B4FF }
+.ty-add-dream-private>span {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+}
+
+.ty-add-dream-desc-container {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.ty-app-download {
+    width: 100%;
+}
+.ty-app-download img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.ty-footer-right {
+    font-size: 12px;
+    color: #999;
+    margin: 12px 0;
+    line-height: 1.5;
+}
+.ty-footer-right a:link {
+    font-size: 12px;
+    color: #999;
+    margin: 12px 0;
+    line-height: 1.5;
+}

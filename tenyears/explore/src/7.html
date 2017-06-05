@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>十年后 - 与世界分享你的追梦历程</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" >
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+	<link rel="stylesheet" href="/css/explore.css">
+    <link rel="stylesheet" href="/exp1.css">
+    <link rel="stylesheet" href="/css/channel.css">
+    <script src='/lib/jquery/jquery-3.2.0.js'></script>
+    <script src="/lib/jsrender/jsrender.js"></script>
+    
+</head>
+<body>
+	<!-- 未登录导航条 -->
+	<div id="ty_layout_nav" role="navigation" class="ty-nav">
+		<div class="ty-nav-content">
+			<div class="ty-nav-btn-content">
+            	<a class="ty-nav-btn ty-nav-feeds" href="/feeds">动态</a>
+            	<a class="ty-nav-btn ty-nav-explore" href="/explore">发现</a>
+        	</div>
+
+        	<a class="ty-nav-logo">
+            	<span class="ty-nav-logo-content"></span>
+        	</a>
+
+        	<div class="ty-nav-login-content">
+            	<a id="ty_nav_register" href="javascript:void(0);" data-action="register">注册</a>
+            	<a id="ty_nav_login" class="ty-nav-login-btn" href="javascript:void(0);" data-action="signIn">登录</a>
+        	</div>
+		</div>
+	</div>
+	 <!--页面主体-->
+    <div class="ty-container">
+    	<div class="ty-channel-header bg-mask" style="background-image:url('/image/499.jpg')">
+    <div class="ty-channel-header-content">
+        <div class="ty-channel-title">文艺</div>
+        <div class="ty-channel-desc clearfix">
+            <div class="ty-col-6">
+                <p class="ty-bold-count">2735</p>
+                <p>梦想</p>
+            </div>
+            <div class="ty-col-6">
+                <p class="ty-bold-count">5216</p>
+                <p>动态</p>
+            </div>
+        </div>
+    </div>
+    <a class="ty-channel-back-to-explore" href="/index.html">
+        <i class="ty-icon-close"></i>
+    </a>
+</div>
+
+	<div class="ty-explore-feed">
+        <div id="ty_explore_feed_nav" class="ty-explore-feed-nav">
+            <ul>
+                <li class="ty-col-4"><a href="javascript:void(0)" class="ty-active js-nav" data-type="0">梦想</a></li>
+                <li class="ty-col-4"><a href="javascript:void(0)" class="ty-active2 js-nav" data-type="1">梦想家</a></li>
+                <li class="ty-col-4"><a href="javascript:void(0)" class="ty-active2 js-nav" data-type="2">动态</a></li>
+            </ul>
+        </div>
+
+        <div id="ty_explore_feed_container" class="ty-explore-feed-container">
+            <div class="container ty-dream-card-container clearfix ty-active">
+                 <!-- 梦想卡片模板 -->
+                 <div class="ty-reborn-dream-card ty-reborn-card ty-card-hover {{:ty.util.getTLenClass(item.text)}} " >
+        <a class="ty-reborn-dream-card-follow ty-card-dream-follow js-action" href="javascript:void(0)" data-id="{{:item.id}}" data-action="followDream">
+            <i class="{{:item.isFollowing?'ty-icon-dream-following':'ty-icon-dream-follow'}}"></i>
+        </a>
+        <a href="/user/{{:item.user.id}}#{{:item.id}}" target="_blank">
+        <div class="ty-reborn-dream-card-header" style="background-image:url('/image/201705141238486162972!s.jpg');">
+            <div class="ty-reborn-dream-card-mask"></div>
+            <div class="ty-reborn-dream-card-title">
+                <!-- {{:title}} -->维持健康，体重50kg以内
+            </div>
+            <div class="ty-reborn-dream-card-small">
+                <!-- {{:ty.util.toGMT(item.deadline, true)}} -->2018年5月15日&nbsp;<!-- {{:ty.util.getFeedStatus(item.status, true)}} -->进行中
+            </div>
+        </div>
+        <div class="ty-reborn-dream-card-body">
+            <!-- {{:text}} -->保持规律休息，健康饮食
+        </div>
+        <div class="ty-reborn-dream-card-footer">
+            <div class="ty-reborn-card-col">
+                <p class="ty-reborn-card-count"><!-- {{:nPosts}} -->8</p>
+                <p>动态</p>
+            </div>
+            <div class="ty-reborn-card-col">
+                <p class="ty-reborn-card-count"><!-- {{:nLikes}} -->0</p>
+                <p>钦佩</p>
+            </div>
+            <div class="ty-reborn-card-col">
+                <p class="ty-reborn-card-count"><!-- {{:nFollowers}} -->1</p>
+                <p>关注者</p>
+            </div>
+        </div>
+        </a>
+    </div> 
+
+                <div class="ty-loading">
+                    <img src="/image/loading.gif">加载中...
+                </div>
+            </div>
+            <div class="container ty-dreamer-card-container  clearfix">
+
+            <div class="ty-reborn-dreamer-card ty-reborn-card ty-card-hover" >
+        <a class="ty-reborn-dreamer-card-follow js-action" href="javascript:void(0)" data-id="{{=item.id}}" data-action="followDreamer">
+            <i class="{{=(item.relationship.isFollowing?'ty-icon-user-following':'ty-icon-user-follow')}} js-follow-user"
+               data-id="{{=item.id}}"></i>
+        </a>
+        <a href="/user/{{=item.id}}" target="_blank">
+        <div class="ty-reborn-dreamer-card-header" style="background-image:url('/image/201687253462673!s.jpg')">
+            <div class="ty-reborn-dreamer-card-mask"></div>
+        </div>
+        <div class="ty-reborn-dreamer-card-body">
+            <div class="ty-reborn-dreamer-card-avatar">
+                    <img src="/image/39124_1491099585!xxs.png" alt="" width="70" height="70" />
+            </div>
+            <div class="ty-reborn-dreamer-card-desc">
+                <div class="ty-reborn-dreamer-card-name">
+                        <!-- {{=item.username}} -->旸夜
+                </div>
+                <p class="ty-reborn-dreamer-card-cdesc">
+                    现在是
+                    <span class="ty-reborn-dreamer-card-font"><!-- {{=item.currentDesc}} -->准毕业生</span>
+                </p>
+                <p class="ty-reborn-dreamer-card-fdesc">
+                    想成为
+                    <span class="ty-reborn-dreamer-card-font"><!-- {{=item.futureDesc}} -->自由人</span>
+                </p>
+            </div>
+        </div>
+        <div class="ty-reborn-dreamer-card-footer">
+            <div class="ty-reborn-card-col">
+                <p class="ty-reborn-card-count">
+                    <!-- {{=item.stats.nDreams}} -->32
+                </p>
+                <p>梦想</p>
+            </div>
+            <div class="ty-reborn-card-col">
+                <p class="ty-reborn-card-count">
+                    <!-- {{=item.stats.nLikes}} -->1518
+                </p>
+                <p>钦佩</p>
+            </div>
+            <div class="ty-reborn-card-col">
+                <p class="ty-reborn-card-count">
+                    <!-- {{=item.stats.nFollowers == -1 ? '∞' : item.stats.nFollowers}} -->4859
+                </p>
+                <p>关注者</p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+                <div class="ty-loading">
+                    <img src="/image/loading.gif">加载中...
+                </div>
+            </div>
+            <div class="container ty-feed-width clearfix">
+               <!-- ---------------------------- -->
+                <div id="ty_feed_item_{{=feed.id}}" class="ty-feed-item box-shadow {{? feed.type == 5}} ty-for-article{{?}} " data-id="{{=feed.id}}" data-type="{{?feed.type === 6}}1{{??}}{{=feed.type}}{{?}}" {{? item.isHidden}} style="display:none" {{?}}>
+
+        {{? feed.type < 5}}
+        <div class="ty-feed-header">
+            <div class="ty-feed-user">
+                <span class="ty-user-avatar">
+                    <a href="/user/{{=dream.user.id}}" title="{{=dream.user.username}}" target="_blank">
+                        <img src="{{=dream.user.avatar}}" alt="头像">
+                    </a>
+                </span>
+                <span class="ty-feed-user-name">
+                    <a class="ty-user-name-link" href="/user/{{=dream.user.id}}" title="{{=dream.user.username}}" target="_blank">
+                        {{=dream.user.username}}
+                    </a>
+                </span>
+                <span class="ty-feed-time">
+                    {{=ty.util.getRelativeTime(feed.timestamp)}}
+                </span>
+            </div>
+
+            <!--如果是梦想,则不显示梦想状态-->
+            {{? feed.type > 1}}
+            <div class="ty-feed-dream {{=ty.util.getFeedStatus(dream.status)}}">
+                <a href="/user/{{=dream.user.id}}#{{=dream.id}}" target="_blank">
+                    <i class="ty-icon-dream-b"></i>
+                    {{=dream.title}}
+                </a>
+            </div>
+            {{?}}
+
+        </div>
+        {{?}}
+
+
+        <div class="ty-feed-body">
+
+            {{? feed.type === 1}}
+            <!--梦想主体-->
+            <div class="ty-feed-dream ">
+                <div class="ty-feed-dream-card {{=ty.util.getFeedStatus(dream.status)}}" >
+                    <a href="/user/{{=dream.user.id}}#{{=dream.id}}" title="点击跳转到具体梦想页面" target="_blank">
+                        <div class="ty-feed-dream-bg" style="background-image:url('{{=dream.image}}!l')">
+                            <div class="ty-feed-dream-title">
+                                <i class="ty-icon-dream-b"></i>
+                                {{=dream.title}}
+                            </div>
+                            <div class="ty-feed-dream-date">
+                                {{=ty.util.toGMT(dream.deadline, true)}}
+                            </div>
+                            <div class="ty-feed-dream-status">
+                                <span class="ty-feed-status">
+                                    {{=ty.util.getFeedStatus(dream.status, true)}}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="ty-feed-dream-desc">
+                        {{=dream.text}}
+                    </div>
+
+                </div>
+            </div>
+            {{?}}
+
+
+            {{? feed.type === 2}}
+            <!--想法主体-->
+            <div class="ty-feed-mood ">
+
+                {{? feed.image}}
+                <div class="ty-feed-img js-action" data-action="moodImage" data-id="{{=feed.id}}"  >
+                    <img src="{{=feed.image}}!l" alt="">
+                </div>
+                {{?}}
+
+                <div class="ty-feed-content">
+                    {{=ty.util.linkReplace(feed.text)}}
+                </div>
+            </div>
+            {{?}}
+
+
+            {{? feed.type === 3}}
+            <!--日志主体-->
+            <div class="ty-feed-article ">
+                <div class="ty-article-title">
+                    <a href="/feeds/article?id={{=feed.id}}" target="_blank">
+                        {{=feed.title}}
+                    </a>
+                </div>
+                <div class="ty-article-content">
+                    {{=ty.util.linkReplace(feed.text)}}
+                </div>
+
+            </div>
+            {{?}}
+
+            {{? feed.type === 4}}
+            <!-- 计划主体 -->
+
+            <div class="ty-dream-timeline-container ">
+
+                <a id="ty_dream_timeline_{{=feed.id}}" href="javascript:void(0);" class="ty-dream-timeline {{=ty.util.getTimelineTitleClass(feed.status)}} {{=ty.util.getFeedStatus(feed.status)}} " data-id="{{=feed.id}}" data-dream-id="{{=dream.id}}" data-action="checkTimeline">
+                <span class="status">
+                </span>
+                </a>
+                    <div class="row">
+                        <p class="title">
+                            {{=feed.title}}
+                        </p>
+                        <p class="date">
+                            {{=ty.util.toGMT(feed.timestamp, 1)}}
+                        </p>
+                    </div>
+
+            </div>
+
+            {{? feed.image}}
+            <div class="ty-feed-img js-action" data-action="moodImage" data-id="{{=feed.id}}"  >
+                <img src="{{=feed.image}}!l" alt="">
+            </div>
+            {{?}}
+
+            {{? feed.text}}
+            <div class="ty-feed-content">
+                {{=ty.util.linkReplace(feed.text)}}
+            </div>
+            {{?}}
+
+            {{?}}
+
+            {{? feed.type === 5}}
+
+            <!--日志正文主体-->
+            <div class="ty-feed-article-detail ">
+                <div class="ty-article-title">
+                    {{=feed.title}}
+                </div>
+                <div class="ty-article-info">
+                    <a href="/user/{{=dream.user.id}}" target="_blank">
+                        {{=dream.user.username}}
+                    </a>
+                    ·
+                    {{=ty.util.getRelativeTime(feed.timestamp)}}
+                </div>
+
+                <div class="ty-article-content">
+                    {{=feed.text}}
+                </div>
+
+                {{? dream.user.id == window.TENYEARS.USER.ID}}
+                <div class="ty-article-edit">
+                    <a href="javascript:void(0)">
+                        <i class="ty-icon-edit"></i>
+                        编辑
+                    </a>
+
+                    <div class="ty-article-edit-detail">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" class="js-action" data-action="modifyArticle" data-id="{{=feed.id}}" data-typ="{{=feed.type}}"  data-dream-id="{{=dream.id}}">修改</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="js-action" data-action="deleteArticle" data-id="{{=feed.id}}" data-typ="{{=feed.type}}" >删除</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {{?}}
+
+
+            </div>
+            {{?}}
+
+        </div>
+        <div class="ty-feed-footer">
+            <div class="ty-feed-handle clearfix">
+                <div class="ty-handle">
+                    <a data-id="{{=feed.id}}" data-type="{{?feed.type === 6}}1{{??}}{{=feed.type}}{{?}}" data-action="like" href="javascript:void(0)"  class="js-feed-item-like js-action {{=ty.util.getActivated(feed.isLiked)}}" data-num="{{=feed.stats.nLikes}}" data-show-operation="0">
+                        <i class="ty-icon-like"></i>
+                        <span>{{=ty.util.getStatNumber(feed.stats.nLikes)}}</span>
+                    </a>
+                </div>
+                <div class="ty-handle">
+                    <a id="ty_feed_comment_{{=feed.id}}" data-id="{{=feed.id}}" data-type="{{?feed.type === 6}}1{{??}}{{=feed.type}}{{?}}" data-action="showOperation"  href="javascript:void(0)"  data-active="" class="js-action" data-num="{{=feed.stats.nReplies}}">
+                        <i class="ty-icon-comment"></i>
+                        <span>{{=ty.util.getStatNumber(feed.stats.nReplies)}}</span>
+                    </a>
+                </div>
+                <div class="ty-handle ty-more">
+                    <a href="javascript:void(0)" data-active="">
+                        <i class="ty-icon-more"></i>
+                    </a>
+
+                    <div class="ty-handle-more">
+                        <ul>
+                            <li><a data-id="{{=feed.id}}" data-type="{{=feed.type}}" data-action="report" class="js-action" href="javascript:void(0);">举报</a></li>
+
+                            {{? dream.user &&  dream.user.id == window.TENYEARS.USER.ID && feed.type < 5}}
+                            <li><a data-id="{{=feed.id}}" data-type="{{=feed.type}}" data-action="deleteFeed" href="javascript:void(0);" class="js-action">删除</a></li>
+                            {{?}}
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="ty-feed-operation">
+            <div class="ty-feed-loading ty-show">
+                <img src="/static/images/common/loading.gif" alt="loading..">
+                正在加载,请稍后..
+            </div>
+
+            <div class="ty-feed-like ty-hide clearfix">
+                <span class="ty-user-avatar ty-user-like ">
+                    <a href="javascript:void(0);" class="">
+                        <i class="ty-icon-like"></i>
+                    </a>
+                </span>
+                <span class="ty-feed-like-container"></span>
+
+            </div>
+
+            <div class="ty-feed-reply-container ty-hide">
+
+            </div>
+
+            <div class="ty-reply-feed ty-hide">
+                <div class="ty-textarea-container">
+                    <textarea class="ty-textarea js-auto-textarea js-action-focus" name="" id="ty_feed_textarea_{{=feed.id}}" placeholder="写下你的建议..." rows="1"  ></textarea>
+                </div>
+                <div class="ty-btn-container">
+                    <span class="ty-tip" data-title="公开评论">
+                        <a id="ty_feed_private_{{=feed.id}}" class="ty-link-btn js-action" href="javascript:void(0);" data-is-private="0" data-id="{{=feed.id}}" data-action="lock">
+                            <i class="ty-icon-unlock"></i>
+                            公开
+                        </a>
+                    </span>
+                    <a id="ty_reply_btn_{{=feed.id}}" class="ty-primary-btn js-feed-btn js-action" data-is-private="0"  href="javascript:void(0);" data-type="{{?feed.type === 6}}1{{??}}{{=feed.type}}{{?}}" data-id="{{=feed.id}}" data-action="reply">
+                        发布
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------------- -->
+
+
+                <div class="ty-loading">
+                    <img src="/image/loading.gif">加载中...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+   
+
+
+<!--通用返回顶部-->
+    <div class="ty-go-top">
+        <a id="ty_go_top_btn" class="ty-go-top-btn js-action" data-id="0" data-action="goToTop" href="javascript:void(0);" title="返回顶部" style="display: none">
+            <span class="arrow"></span>
+            <span class="stick"></span>
+        </a>
+    </div>
+
+</body>
+    <script type="text/javascript" src="/js/explore.js"></script>
+    <script type="text/javascript" src="/js/go-to-top.js"></script>
+</html>
