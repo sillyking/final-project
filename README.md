@@ -30,11 +30,11 @@
                   </tr>
                   <tr>
                     <td>金茏晟</td>
-                    <td>explore，explore/1-8，user等页面</td>
+                    <td>explore，explore/1-8，user，account2-3页面及整个页面布局</td>
                   </tr>
                    <tr>
                     <td>邓悦</td>
-                    <td>account/login页面</td>
+                    <td>account第一个页面，footer，about页面</td>
                   </tr>
             </table>
     </div>
