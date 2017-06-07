@@ -1,0 +1,346 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.ty-login-explore {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: center center no-repeat;
+    background-size: cover;
+    background-image: url(/image/login_expore_bg.jpg)
+}
+
+.ty-section-explore {
+    width: 680px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    font-size: 50px
+}
+
+.ty-section-explore h2 {
+    line-height: 70px;
+    margin-top: 0;
+    font-size: 70px;
+    margin-bottom: 30px
+}
+
+.ty-explore-channel-animation {
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 50px auto 0;
+    color: #fff;
+    font-size: 48px;
+    padding: 1px 0;
+    vertical-align: baseline
+}
+
+.ty-explore-channel-animation-content ul {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.ty-explore-channel-animation-content li {
+    width: 100%;
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: baseline
+}
+
+.ty-explore-channel-animation-content li a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background: 0 0
+}
+
+.ty-explore-channel-animation-content {
+    width: 110px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    transition: all .8s cubic-bezier(.175, .885, .335, 1);
+    vertical-align: bottom;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    line-height: 50px
+}
+
+@keyframes slide {
+    from,
+    to {
+        top: 0
+    }
+
+    12.5% {
+        top: -70px
+    }
+
+    25% {
+        top: -140px
+    }
+
+    37.5% {
+        top: -210px
+    }
+
+    50% {
+        top: -280px
+    }
+
+    62.5% {
+        top: -350px
+    }
+
+    75% {
+        top: -420px
+    }
+
+    87.5% {
+        top: -490px
+    }
+
+}
+
+.ty-explore-channel-animation-content ul {
+    animation: slide 16s  infinite
+}
+
+.ty-login-channel {
+    width: 100%;
+    height: 600px;
+    display: block;
+    background: url(/image/ty_login_channel.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative
+}
+
+.ty-login-channel-panel {
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -580px;
+    top: 50px;
+    z-index: 99;
+    display: block
+}
+
+.ty-login-footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background: #23353c;
+    color: #ccc;
+    font-size: 14px
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: table;
+    overflow: hidden
+}
+
+.footer-content,
+.footer-copyright,
+.footer-link {
+    width: 1000px;
+    margin: 0 auto
+}
+
+.footer-content {
+    height: 210px
+}
+
+.footer-content-col {
+    width: 25%;
+    height: 100%;
+    float: left
+}
+
+.footer-content-col h2 {
+    width: 134px;
+    height: 36px;
+    background: url(http://10years.me/static/images/login/logo_login.png) no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    margin-bottom: 20px
+}
+
+.footer-content-col p,
+.footer-content-col-desc {
+    text-align: left;
+    color: #aaa
+}
+
+.footer-content-col-desc {
+    width: 80%;
+    margin-top: 20px;
+    line-height: 20px
+}
+
+.footer-content-col-title {
+    text-align: left;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #eee
+}
+
+.footer-content-col-ul {
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 0
+}
+
+.footer-content-col-ul li {
+    text-align: left;
+    height: 30px;
+    line-height: 30px
+}
+
+.footer-content-col-ul li a {
+    font-size: 13px;
+    color: #aaa;
+    text-decoration: none
+}
+
+.footer-content-download {
+    width: 100%;
+    margin-top: 20px
+}
+
+.footer-content-download-col {
+    width: 50%;
+    float: left
+}
+
+.download-btn {
+    width: 90%;
+    border: 1px solid #00B4FF;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    color: #00B4FF
+}
+
+.download-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    color: #00B4FF;
+    text-decoration: none !important
+}
+
+.download-btn a i {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 20px;
+    top: 3px;
+    color: #00B4FF;
+    transition: all .3s ease-in-out
+}
+
+.download-btn a span {
+    font-size: 13px;
+    color: #00B4FF
+}
+
+.footer-link {
+    margin: 30px auto;
+    width: 1000px
+}
+
+.footer-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 200px
+}
+
+.footer-link ul li {
+    float: left;
+    width: 30%;
+    margin: 0 1.666666666666666666%
+}
+
+.footer-link a:link,
+.footer-link a:visited {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 30px
+}
+
+.footer-link-wechat {
+    position: relative
+}
+
+.footer-link-wechat .footer-link-wechat-hover {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -115px;
+    left: -34px;
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    -webkit-transform: translate(0, 20px);
+    -moz-transform: translate(0, 20px);
+    -ms-transform: translate(0, 20px);
+    -o-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    -webkit-transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+    -moz-transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+    -ms-transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+    transition: transform .5s ease-in-out, opacity .5s ease-in-out
+}
+
+.footer-link-wechat-hover img {
+    margin: 5px;
+    width: 0;
+    height: 0
+}
+
+.footer-copyright {
+    font-size: 13px;
+    text-align: center;
+    color: rgba(255, 255, 255, .3);
+    width: 1000px;
+    margin: 0 auto
+}
+
+.footer-copyright a {
+    color: rgba(255, 255, 255, .3);
+    text-decoration: none
+}

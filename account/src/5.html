@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <title>十年后 - 与世界分享你的追梦历程</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+        <link rel="stylesheet" href="/css/explore.css">
+        <link rel="stylesheet" href="/css/icon.css">
+        <link rel="stylesheet" href="/css/channel.css">
+        <script src='/lib/jquery/jquery-3.2.0.js'></script>
+    </head>
+    <body>
+        <!-- 未登录导航条 -->
+        <div id="ty_layout_nav" role="navigation" class="ty-nav">
+            <div class="ty-nav-content">
+                <div class="ty-nav-btn-content">
+                    <a class="ty-nav-btn ty-nav-feeds" href="/index.html">动态</a>
+                    <a class="ty-nav-btn ty-nav-explore" href="explore.html">发现</a></div>
+                <a class="ty-nav-logo">
+                    <span class="ty-nav-logo-content"></span>
+                </a>
+                <div class="ty-nav-login-content">
+                    <a id="ty_nav_register" href="javascript:void(0);" data-action="register">注册</a>
+                    <a id="ty_nav_login" class="ty-nav-login-btn" href="javascript:void(0);" data-action="signIn">登录</a></div>
+            </div>
+        </div>
+        <!--页面主体-->
+        <div class="ty-container">
+            <div class="ty-channel-header bg-mask" style="background-image:url('/image/238.jpg')">
+                <div class="ty-channel-header-content">
+                    <div class="ty-channel-title">健康</div>
+                    <div class="ty-channel-desc clearfix">
+                        <div class="ty-col-6">
+                            <p class="ty-bold-count">3137</p>
+                            <p>梦想</p>
+                        </div>
+                        <div class="ty-col-6">
+                            <p class="ty-bold-count">6879</p>
+                            <p>动态</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="ty-channel-back-to-explore" href="explore.html">
+                    <i class="ty-icon-close"></i>
+                </a>
+            </div>
+            <div class="ty-explore-feed">
+                <div id="ty_explore_feed_nav" class="ty-explore-feed-nav">
+                    <ul>
+                        <li class="ty-col-4">
+                            <a href="javascript:void(0)" class="ty-active js-nav" data-type="0">梦想</a></li>
+                        <li class="ty-col-4">
+                            <a href="javascript:void(0)" class="ty-active2 js-nav" data-type="1">梦想家</a></li>
+                        <li class="ty-col-4">
+                            <a href="javascript:void(0)" class="ty-active2 js-nav" data-type="2">动态</a></li>
+                    </ul>
+                </div>
+                <div id="ty_explore_feed_container" class="ty-explore-feed-container">
+                    <div class="container ty-dream-card-container clearfix ty-active">
+                        <!-- 梦想卡片模板 -->
+                        <div class="ty-reborn-dream-card ty-reborn-card ty-card-hover {{:ty.util.getTLenClass(item.text)}} ">
+                            <a class="ty-reborn-dream-card-follow ty-card-dream-follow js-action" href="javascript:void(0)" data-id="{{:item.id}}" data-action="followDream">
+                                <i class="ty-icon-dream-follow"></i>
+                            </a>
+                            <a href="user.html" target="_blank">
+                                <div class="ty-reborn-dream-card-header" style="background-image:url('/image/201705141238486162972!s.jpg');">
+                                    <div class="ty-reborn-dream-card-mask"></div>
+                                    <div class="ty-reborn-dream-card-title">
+                                        <!-- {{:title}} -->维持健康，体重50kg以内</div>
+                                    <div class="ty-reborn-dream-card-small">
+                                        <!-- {{:ty.util.toGMT(item.deadline, true)}} -->2018年5月15日&nbsp;
+                                        <!-- {{:ty.util.getFeedStatus(item.status, true)}} -->进行中</div></div>
+                                <div class="ty-reborn-dream-card-body">
+                                    <!-- {{:text}} -->保持规律休息，健康饮食</div>
+                                <div class="ty-reborn-dream-card-footer">
+                                    <div class="ty-reborn-card-col">
+                                        <p class="ty-reborn-card-count">
+                                            <!-- {{:nPosts}} -->8</p>
+                                        <p>动态</p>
+                                    </div>
+                                    <div class="ty-reborn-card-col">
+                                        <p class="ty-reborn-card-count">
+                                            <!-- {{:nLikes}} -->0</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-reborn-card-col">
+                                        <p class="ty-reborn-card-count">
+                                            <!-- {{:nFollowers}} -->1</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-loading">
+                            <img src="/image/loading.gif">加载中...</div></div>
+                    <div class="container ty-dreamer-card-container  clearfix">
+                        <div class="ty-reborn-dreamer-card ty-reborn-card ty-card-hover">
+                            <a class="ty-reborn-dreamer-card-follow js-action" href="javascript:void(0)" data-id="{{=item.id}}" data-action="followDreamer">
+                                <i class="ty-icon-user-follow js-follow-user" data-id="{{=item.id}}"></i>
+                            </a>
+                            <a href="user.html" target="_blank">
+                                <div class="ty-reborn-dreamer-card-header" style="background-image:url('/image/201687253462673!s.jpg')">
+                                    <div class="ty-reborn-dreamer-card-mask"></div>
+                                </div>
+                                <div class="ty-reborn-dreamer-card-body">
+                                    <div class="ty-reborn-dreamer-card-avatar">
+                                        <img src="/image/39124_1491099585!xxs.png" alt="" width="70" height="70" /></div>
+                                    <div class="ty-reborn-dreamer-card-desc">
+                                        <div class="ty-reborn-dreamer-card-name">
+                                            <!-- {{=item.username}} -->旸夜</div>
+                                        <p class="ty-reborn-dreamer-card-cdesc">现在是
+                                            <span class="ty-reborn-dreamer-card-font">
+                                                <!-- {{=item.currentDesc}} -->准毕业生</span></p>
+                                        <p class="ty-reborn-dreamer-card-fdesc">想成为
+                                            <span class="ty-reborn-dreamer-card-font">
+                                                <!-- {{=item.futureDesc}} -->自由人</span></p>
+                                    </div>
+                                </div>
+                                <div class="ty-reborn-dreamer-card-footer">
+                                    <div class="ty-reborn-card-col">
+                                        <p class="ty-reborn-card-count">
+                                            <!-- {{=item.stats.nDreams}} -->32</p>
+                                        <p>梦想</p>
+                                    </div>
+                                    <div class="ty-reborn-card-col">
+                                        <p class="ty-reborn-card-count">
+                                            <!-- {{=item.stats.nLikes}} -->1518</p>
+                                        <p>钦佩</p>
+                                    </div>
+                                    <div class="ty-reborn-card-col">
+                                        <p class="ty-reborn-card-count">
+                                            <!-- {{=item.stats.nFollowers==- 1 ? '∞' : item.stats.nFollowers}} -->4859</p>
+                                        <p>关注者</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ty-loading">
+                            <img src="/image/loading.gif">加载中...</div></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!--通用返回顶部-->
+        <div class="ty-go-top">
+            <a id="ty_go_top_btn" class="ty-go-top-btn js-action" data-id="0" data-action="goToTop" href="javascript:void(0);" title="返回顶部" style="display: none">
+                <span class="arrow"></span>
+                <span class="stick"></span>
+            </a>
+        </div>
+    </body>
+    <script type="text/javascript" src="/js/explore.js"></script>
+    <script type="text/javascript" src="/js/go-to-top.js"></script>
+
+</html>
