@@ -1,0 +1,770 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #f4f4f4;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: 0 0;
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 13px;
+	vertical-align: baseline;
+	background: 0 0;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+	outline: 0;
+}
+
+a:active,
+a:hover,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #444;
+}
+
+.ty-nav {
+	position: fixed;
+	z-index: 50;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, .3);
+}
+
+.ty-nav-content {
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	width: auto;
+	padding: 0 30px;
+}
+
+.ty-nav-logo {
+	display: inline-block;
+	float: left;
+}
+
+.ty-nav-logo {
+	line-height: 50px;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+}
+
+.ty-nav-logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+}
+
+.ty-nav-logo-content {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	background: url(/image/logo.png) no-repeat;
+	background-size: 40px 40px;
+}
+
+.ty-nav-btn-content {
+	display: inline-block;
+	float: left;
+	width: 320px;
+	height: 50px;
+	overflow: hidden;
+}
+
+.ty-nav-btn-content>a,
+.ty-nav-btn-content>div {
+	display: inline-block;
+	width: 80px;
+	height: 48px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 2px solid #fff;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	font-size: 13px;
+	cursor: pointer;
+	float: left;
+	opacity: .6;
+	color: #333;
+}
+
+.ty-nav-btn-content>.ty-nav-btn:hover {
+	background: #f7f7f7;
+	border-bottom-color: #f7f7f7;
+}
+
+.ty-nav-btn-content>a:hover,
+.ty-nav-btn-content>div:hover {
+	opacity: 1;
+}
+
+.ty-nav-btn-content a.ty-nav-explore {
+	background: #fff;
+	border-bottom-color: #00B4FF;
+	opacity: 1
+}
+
+.ty-nav-btn-content a.ty-nav-explore:hover {
+	border-bottom-color: #00B4FF
+}
+
+.ty-nav-login-content {
+	display: inline-block;
+	float: right;
+	height: 100%;
+	width: 160px;
+}
+
+.ty-nav-login-content a {
+	display: inline-block;
+	width: 44%;
+	text-align: center;
+	font-size: 13px;
+	height: 34px;
+	margin-top: 9px;
+	line-height: 34px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+}
+
+a.ty-nav-login-btn:link {
+	background: #00B4FF;
+	color: #fff;
+}
+
+.ty-container {
+	position: relative;
+	display: block;
+	padding-top: 50px;
+}
+
+.ty-col-6 {
+	position: relative;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.ty-bold-count {
+	font-weight: 700;
+}
+
+.ty-explore-tag,
+.ty-explore-tag .ty-explore-tag-content .ty-explore-tag-title {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out
+}
+
+.ty-explore-container {
+	width: 100%;
+	position: relative;
+}
+
+.ty-explore-container .ty-explore-channel-container {
+	background-color: #37BD94;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(#3bb1dd), to(#fec454));
+	background: -moz-linear-gradient(left, #3BB1DD 0, #FEC454 100%);
+	padding: 25px 0;
+	margin-bottom: 20px;
+}
+
+.ty-explore-container .ty-explore-channel-container .ty-explore-channel-content {
+	max-width: 1020px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.ty-explore-tag {
+	width: 230px;
+	height: 130px;
+	display: inline-block;
+	background: center/cover no-repeat;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 10px;
+	transition: all .3s ease-in-out;
+}
+
+.bg-mask:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .4);
+	z-index: 10;
+}
+
+.ty-explore-tag .ty-explore-tag-content {
+	position: absolute;
+	z-index: 20;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.ty-explore-tag .ty-explore-tag-content .ty-explore-tag-title {
+	position: relative;
+	height: 100%;
+	text-align: center;
+	line-height: 130px;
+	color: #fff;
+	font-size: 26px;
+	transition: all .3s ease-in-out;
+}
+
+.ty-explore-tag .ty-explore-tag-content .ty-explore-tag-row {
+	height: 52px;
+	position: relative;
+	color: #fff;
+	font-size: 20px;
+}
+
+.ty-explore-tag .ty-explore-tag-content .ty-explore-tag-row p {
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.ty-explore-tag .ty-explore-tag-content .ty-explore-tag-row p.ty-bold-count {
+	font-size: 16px
+}
+
+.ty-explore-tag .ty-explore-tag-content .ty-explore-tag-row:after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 20px;
+	background: #fff;
+	background: rgba(255, 255, 255, .6);
+	top: 10px;
+	left: 50%;
+}
+
+.ty-explore-tag .ty-explore-tag-content:hover .ty-explore-tag-title {
+	height: 78px;
+	line-height: 78px
+}
+
+@media (max-width:800px) {
+	.ty-explore-tag {
+		width: 210px;
+		height: 130px;
+		margin: 8px
+	}
+
+}
+
+@media (max-width:700px) {
+	.ty-explore-tag {
+		width: 180px;
+		height: 100px
+	}
+
+	.ty-explore-tag .ty-explore-tag-content .ty-explore-tag-title {
+		line-height: 100px
+	}
+
+	.ty-explore-tag .ty-explore-tag-content .ty-explore-tag-row {
+		line-height: 40px
+	}
+
+	.ty-explore-tag .ty-explore-tag-content:hover .ty-explore-tag-title {
+		height: 60px;
+		line-height: 60px
+	}
+
+}
+
+.ty-explore-feed {
+	max-width: 1020px;
+	padding: 0 40px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.ty-col-4 {
+	width: 33.33333%;
+	float: left;
+	position: relative;
+	font-size: 13px;
+}
+
+.ty-explore-feed-nav {
+	padding: 0 10px;
+	position: relative
+}
+
+.ty-explore-feed-nav ul {
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	-webkit-padding-start: 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .07);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .07);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .07);
+}
+
+.ty-explore-feed-nav ul li {
+	list-style: none;
+	height: 100%;
+	text-align: center
+}
+
+.ty-explore-feed-nav ul li a {
+	display: block;
+	height: 38px;
+	line-height: 40px;
+	background: #fff;
+	border-bottom: 2px solid #fff;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.ty-explore-feed-nav ul li a.ty-active {
+	color: #00B4FF;
+	border-bottom-color: #00B4FF
+}
+
+.ty-explore-feed-nav ul li a:hover {
+	color: #00B4FF
+}
+
+.ty-explore-feed .ty-explore-feed-container {
+	width: 100%;
+	min-height: 500px;
+	margin-top: 20px
+}
+
+.ty-explore-feed .ty-explore-feed-container .container {
+	display: none;
+	margin: 0 auto
+}
+
+.ty-explore-feed .ty-explore-feed-container .container.ty-active {
+	display: block
+}
+
+.ty-loading {
+	width: 100%;
+	height: 30px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #666;
+	text-align: center;
+	line-height: 31px;
+	font-size: 12px;
+	margin-bottom: 10px;
+	float: left
+}
+
+.ty-loading img {
+	position: relative;
+	width: 14px;
+	height: 14px;
+	top: 2px;
+	margin-right: 5px;
+}
+
+.ty-go-top:hover {
+	background: #e5e5e5
+}
+
+.ty-go-top .arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: -1px;
+	border: 9px solid transparent;
+	border-bottom-color: #aaa;
+	left: 11px
+}
+
+.ty-go-top .stick {
+	position: absolute;
+	width: 8px;
+	height: 14px;
+	top: 15px;
+	border-radius: 1px;
+	background-color: #aaa;
+	left: 16px
+}
+
+.ty-go-top-btn {
+	position: fixed;
+	bottom: 80px;
+	right: 80px;
+	width: 40px;
+	height: 40px;
+	background: #e2e2e2;
+	z-index: 99;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-transition: hover .3s;
+	-moz-transition: hover .3s;
+	-ms-transition: hover .3s;
+	-o-transition: hover .3s;
+	transition: hover .3s;
+}
+
+a.ty-card-dream-follow,
+a.ty-card-dreamer-follow {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	z-index: 22;
+	padding: 2px 4px 4px;
+	-o-transition: all .3s;
+	transition: all .3s;
+	background: #fff;
+}
+
+.ty-reborn-dream-card-follow i,
+.ty-reborn-dreamer-card-follow i {
+	color: #00B4FF;
+}
+
+.ty-card-dream-follow i,
+.ty-card-dreamer-follow i {
+	font-size: 22px;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.ty-reborn-dreamer-card-follow {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out
+}
+
+.ty-card-hover:hover {
+	-webkit-box-shadow: 0 0 10px #ccc;
+	-moz-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 10px #ccc;
+	-webkit-transform: scale(1.01, 1.01);
+	-moz-transform: scale(1.01, 1.01);
+	-ms-transform: scale(1.01, 1.01);
+	-o-transform: scale(1.01, 1.01);
+	transform: scale(1.01, 1.01)
+}
+
+.ty-reborn-dream-card,
+.ty-reborn-dreamer-card {
+	float: left;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .07)
+}
+
+.ty-reborn-dreamer-card {
+	width: 320px;
+	height: 240px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	cursor: pointer;
+	background-color: #fff
+}
+
+.ty-reborn-dreamer-card-footer,
+.ty-reborn-dreamer-card-header {
+	height: 50%;
+	width: 100%;
+	position: relative
+}
+
+.ty-reborn-dreamer-card-header {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	z-index: 20;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0
+}
+
+.ty-reborn-dreamer-card-mask {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	background: #000;
+	background: rgba(0, 0, 0, .6);
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .6) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, .6)));
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .6) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .6)));
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .6) 100%)
+}
+
+.ty-reborn-dreamer-card-body {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	margin-top: -46px;
+	z-index: 30
+}
+
+.ty-reborn-dreamer-card-avatar {
+	width: 95px;
+	height: 80px;
+	float: left
+}
+
+.ty-reborn-dreamer-card-avatar img {
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	border: 2px solid #ccc;
+	border-color: rgba(255, 255, 255, .7);
+	margin-left: 20px
+}
+
+.ty-reborn-dreamer-card-desc {
+	height: 80px;
+	padding-left: 95px
+}
+
+.ty-reborn-dreamer-card-name {
+	color: #fff;
+	font-size: 18px;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 2px
+}
+
+.ty-reborn-dreamer-card-desc p {
+	font-size: 14px;
+	color: #999;
+	line-height: 20px
+}
+
+span.ty-reborn-dreamer-card-font {
+	margin-left: 5px;
+	color: #666
+}
+
+.ty-reborn-dreamer-card-footer {
+	height: 54px;
+	position: absolute;
+	bottom: 0;
+	left: 0
+}
+
+.ty-reborn-card-col {
+	width: 33.333%;
+	float: left;
+	text-align: center
+}
+
+.ty-reborn-card-col p {
+	color: #999;
+	font-size: 13px;
+	line-height: 20px
+}
+
+.ty-reborn-card-col p.ty-reborn-card-count {
+	font-size: 16px;
+	color: #444;
+	font-weight: 700
+}
+
+.ty-reborn-dreamer-card-follow {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 28px;
+	background: #fff;
+	top: 15px;
+	right: 15px;
+	z-index: 30;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	transition: all .3s ease-in-out
+}
+
+.ty-reborn-dream-card,
+.ty-reborn-dream-card-body {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	overflow: hidden
+}
+
+.ty-reborn-dreamer-card-follow i {
+	color: #00B4FF;
+	display: block;
+	width: 22px;
+	height: 22px;
+	font-size: 22px;
+	position: absolute;
+	left: 5px;
+	top: 3px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out
+}
+
+.ty-reborn-dream-card-follow:hover,
+.ty-reborn-dreamer-card-follow:hover {
+	background: #eee
+}
+
+.ty-reborn-dream-card {
+	width: 320px;
+	height: 250px;
+	border-radius: 5px;
+	position: relative;
+	margin: 10px;
+	background-color: #fff
+}
+
+.ty-reborn-dream-card-header {
+	width: 100%;
+	height: 55%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	z-index: 20;
+	position: relative;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden
+}
+
+.ty-reborn-dream-card-mask {
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	background: #000;
+	background: rgba(0, 0, 0, .6);
+	background: -moz-linear-gradient(right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .6) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, .6)));
+	background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .6) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .6)));
+	background: linear-gradient(to left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .6) 100%);
+	z-index: 21
+}
+
+.ty-reborn-dream-card-small,
+.ty-reborn-dream-card-title {
+	color: #fff;
+	z-index: 30;
+	position: relative;
+	margin-left: 20px;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .5)
+}
+
+.ty-reborn-dream-card-title a:active,
+.ty-reborn-dream-card-title a:hover,
+.ty-reborn-dream-card-title a:link,
+.ty-reborn-dream-card-title a:visited,
+.ty-reborn-dreamer-card-name a:active,
+.ty-reborn-dreamer-card-name a:hover,
+.ty-reborn-dreamer-card-name a:link,
+.ty-reborn-dreamer-card-name a:visited {
+	color: #fff
+}
+
+.ty-reborn-dream-card-title {
+	padding-top: 20px;
+	margin-bottom: 8px;
+	font-size: 18px
+}
+
+.ty-reborn-dream-card-small {
+	font-size: 13px
+}
+
+.ty-reborn-dream-card-body {
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	top: 55%;
+	right: 0;
+	padding: 15px 20px 20px;
+	color: #666;
+	font-size: 14px;
+	line-height: 20px;
+	border-radius: 5px
+}
+
+.ty-reborn-dream-card-footer {
+	width: 100%;
+	height: 78px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 40;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out
+}
+.ty-reborn-dream-card-footer .ty-reborn-card-col {
+	padding-top: 20px
+}

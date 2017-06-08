@@ -1,0 +1,349 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a:active,
+a:hover,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #333;
+}
+
+a {
+	margin: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: 0 0;
+}
+
+a,
+hr {
+	padding: 0;
+}
+
+.ty-login-index {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: center center no-repeat;
+	background-size: cover;
+	background-image: url('/image/login_bg.jpg');
+}
+
+.bg-mask:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .4);
+	z-index: 10;
+}
+
+.ty-login-index-content,
+.ty-login-index-padding {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.ty-login-index-header {
+	position: absolute;
+	top: 20px;
+	height: 40px;
+	width: 100%;
+	z-index: 100;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+.ty-login-index-content h1 {
+	width: 134px;
+	height: 36px;
+	float: left;
+}
+
+h1 {
+	display: block;
+	font-size: 2em;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+
+.ty-login-index-content h1 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+	background: url(/image/logo_login.png) no-repeat;
+	background-size: cover;
+}
+
+.ty-login-index-header a {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.ty-login-index-fast-link {
+	float: right;
+	height: 100%;
+	width: 200px;
+}
+
+.ty-login-fast-link-btn {
+	width: 74px;
+	height: 30px;
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #fff;
+	border-radius: 3px;
+	margin-right: 20px !important;
+	line-height: 30px;
+	text-align: center;
+	transition: all .5s;
+}
+
+.ty-login-fast-link-btn:hover {
+	background: #00B4FF;
+	border: 1px solid  #00B4FF;
+}
+
+.ty-a-hover-underline:hover {
+	text-decoration: underline !important;
+}
+
+.ty-login-index-header a:active,
+.ty-login-index-header a:hover,
+.ty-login-index-header a:link,
+.ty-login-index-header a:visited {
+	color: #eee;
+}
+
+.ty-login-index-form-content {
+	width: 700px;
+	height: 430px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -350px;
+	margin-top: -250px;
+	z-index: 20;
+}
+
+.ty-login-index-form-title {
+	width: 628px;
+	height: 54px;
+	margin: 40px auto 60px;
+	background: url(/image/login_index_title.png) no-repeat;
+	background-size: cover;
+	text-indent: -9999px;
+}
+
+.ty-login-index-form {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.ty-login-index-form-group {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	position: relative;
+}
+
+.ty-login-index-form-group input {
+	width: 100%;
+	height: 100%;
+	line-height: 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(255, 255, 255, .3);
+	border: 1px solid #fff;
+	border-radius: 3px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	padding: 8px;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+.ty-input-tool-tip {
+	position: absolute;
+	top: -240%;
+	right: -270px;
+	width: 150px;
+	height: 18px;
+	background: #eee;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 100px;
+	display: none;
+}
+
+.ty-input-tool-tip span:before {
+	position: absolute;
+	top: 7px;
+	left: -15px;
+	width: 0;
+	height: 0;
+	border: 8px transparent solid;
+	border-right: 8px solid #eee;
+	content: "";
+	font-weight: 600;
+	margin-right: 5px;
+	text-indent: 10px;
+}
+
+.ty-input-tool-tip.pwd {
+	width: 120px;
+	height: 18px;
+	right: -240px;
+}
+
+.ty-input-tool-tip.mail.sign {
+	width: 90px;
+}
+
+.ty-input-tip-mail-error,
+.ty-input-tip-mail-empty,
+.ty-input-tip-pwd-empty,
+.ty-input-tip-pwd-short {
+	display: none;
+}
+
+#ty_password_hidden {
+	display: none;
+}
+
+.ty-login-index-form-check {
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+
+.ty-login-index-form-check label {
+	cursor: pointer;
+	color: #e5e5e5;
+}
+
+#ty_remember_me {
+	position: relative;
+	top: -2px;
+}
+
+.ty-login-index-form-check a:active,
+.ty-login-index-form-check a:hover,
+.ty-login-index-form-check a:link,
+.ty-login-index-form-check a:visited {
+	color: #e5e5e5;
+}
+
+.ty-login-index-form-check a {
+	float: right;
+}
+
+.ty-login-btn,
+a.ty-login-btn {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 36px;
+	line-height: 32px;
+	border-radius: 30px;
+	border: 0;
+	background: #00B4FF;
+	color: #fff;
+	cursor: pointer;
+	font-size: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.ty-login-btn i {
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	font-size: 13px;
+	top: 8px;
+	left: 58%;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	opacity: .8;
+}
+
+#ty_register_form {
+	display: none;
+}
+
+#ty_register_pwd_hidden {
+	display: none;
+}
+
+.ty-login-index-desc {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 3px;
+	color: #eee;
+	bottom: 200px;
+}
+
+.ty-login-index-desc p {
+	margin: 8px 0;
+}
+
+.ty-login-next:active,
+.ty-login-next:hover,
+.ty-login-next:link,
+.ty-login-next:visited {
+	color: #000;
+}
+
+.ty-login-next {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin-left: -15px;
+	color: #ddd;
+	z-index: 99;
+	opacity: .1;
+	-webkit-animation: tyLoginNextMove 2s infinite linear;
+	-o-animation: tyLoginNextMove 2s infinite linear;
+	animation: tyLoginNextMove 2s infinite linear;
+}
+
+.ty-login-index-content {
+	margin: 0 auto;
+	z-index: 99;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>十年后 - 与世界分享你的追梦历程</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+    <link rel="stylesheet" href="/css/user.css">
+    <link rel="stylesheet" href="/css/icon.css">
+    <script src='/lib/jquery/jquery-3.2.0.js'></script>
+  </head>
+  <body>
+    <!-- 未登录导航条 -->
+    <div id="ty_layout_nav" role="navigation" class="ty-nav">
+      <div class="ty-nav-content">
+        <div class="ty-nav-btn-content">
+          <a class="ty-nav-btn ty-nav-feeds" href="/index.html">动态</a>
+          <a class="ty-nav-btn ty-nav-explore" href="explore.html">发现</a></div>
+        <a class="ty-nav-logo">
+          <span class="ty-nav-logo-content"></span>
+        </a>
+        <div class="ty-nav-login-content">
+          <a id="ty_nav_register" href="javascript:void(0);" data-action="register">注册</a>
+          <a id="ty_nav_login" class="ty-nav-login-btn" href="javascript:void(0);" data-action="signIn">登录</a></div>
+      </div>
+    </div>
+    <!--页面主体-->
+    <div class="ty-container">
+      <div id="ty_profile" class="ty-profile ">
+        <div id="ty_profile_bg" class="ty-profile-bg bg-mask" style="background-image:url('/image/201608262347541472226475!ll.jpg')" data-origin="http://tenyears.b0.upaiyun.com/2016/6/11/20166111231497390"></div>
+        <div id="ty_profile_motto" class="ty-profile-motto">
+          <div id="ty_profile_motto_container" class="ty-profile-motto-container" data-origin="冰冻三尺，非一日之寒" spellcheck="false">别太把自己当回事，认清这点你会好受很多</div></div>
+        <div class="ty-profile-content">
+          <div class="ty-profile-content-row">
+            <div class="ty-profile-avatar-content">
+              <div class="ty-profile-avatar">
+                <img id="ty_profile_avatar" src="/image/481208_1477184289.png"></div>
+            </div>
+          </div>
+          <div id="ty_profile_modify_content" class="ty-profile-modify-content">
+            <div class="ty-profile-content-row">
+              <h1>
+                <span id="ty_profile_username" class="ty-profile-modify-hide">赳赳</span></h1>
+            </div>
+            <div class="ty-profile-content-row ty-999">生活了
+              <span id="ty_profile_age" class="ty-profile-modify-hide">26</span>年的
+              <span id="ty_profile_gender" class="ty-profile-modify-hide" data-origin="2">女生</span>
+              <span id="ty_profile_modify_gender" class="ty-profile-modify-show"></span>，在
+              <span id="ty_profile_city" class="ty-profile-modify-hide ">合肥</span></div>
+            <div class="ty-profile-content-row ty-profile-desc-content ty-999">现在是
+              <span class="ty-profile-desc ty-666">
+                <span id="ty_profile_cdesc" class="ty-profile-modify-hide ty-profile-modify-border-bottom">美工一只</span></span>丨&nbsp;想成为
+              <span class="ty-profile-desc ty-666">
+                <span id="ty_profile_fdesc" class="ty-profile-modify-hide ty-profile-modify-border-bottom">实现自我追求的人</span></span>
+            </div>
+          </div>
+          <span id="ty_profile_modify_btn_container" class="ty-profile-modify-btn-container">
+            <a class="ty-profile-modify-btn js-action" href="javascript:void(0);" data-id="343861" data-isFollow="0" data-action="followUser">
+              <i class="ty-icon-user-follow"></i>关注</a>
+          </span>
+        </div>
+        <!-- -------- -->
+        <div class="ty-profile-count">
+          <ul>
+            <li>
+              <p class="ty-profile-count-detail">8</p>
+              <p class="ty-profile-count-desc">梦想</p></li>
+            <li>
+              <p class="ty-profile-count-detail">418</p>
+              <p class="ty-profile-count-desc">动态</p></li>
+            <li>
+              <p class="ty-profile-count-detail">914</p>
+              <p class="ty-profile-count-desc">钦佩</p></li>
+            <li>
+              <a href="javascript:void(0);" class="ty-profile-follow-btn js-action" data-id="343861" data-type="0" data-action="showFollowList">
+                <p class="ty-profile-count-detail">43</p>
+                <p class="ty-profile-count-desc">关注</p></a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="ty-profile-follow-btn js-action" data-action="showFollowList" data-id="343861" data-type="1">
+                <p class="ty-profile-count-detail">903</p>
+                <p class="ty-profile-count-desc">关注者</p></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="timeline"></div>
+      <div class="ty-dream-news-container">
+        <div id="ty_containers" class="containers clearfix">
+          <div class="container js-container">
+            <div class="ty-profile-dream-content clearfix">
+              <div class="ty-profile-dream-left">
+                <div class="ty-profile-tab">
+                  <div class="ty-col-4">
+                    <a href="javascript:void(0)" data-id="196805" data-has-more="1" class="ty-active js-action" data-action="changeProfileTab" data-type="0">记录</a></div>
+                  <div class="ty-col-4">
+                    <a href="javascript:void(0)" data-id="196805" data-has-more="1" class=" js-action" data-action="changeProfileTab" data-type="1">计划</a></div>
+                  <div class="ty-col-4">
+                    <a href="javascript:void(0)" data-id="196805" data-has-more="1" class=" js-action" data-action="changeProfileTab" data-type="2">讨论</a></div>
+                </div>
+                <div class="ty-profile-all-container">
+                  <div id="ty_profile_containers_196805" class="ty-profile-containers clearfix ty-active-0" data-id="196805">
+                    <div class="ty-profile-container ty-col-4 ty-active" data-id="196805" data-type="0">
+                      <!--feeds -->
+                      <div class="ty-profile-dream-feeds" data-id="196805" data-has-more="1">
+                        <div class="ty-feed-item">
+                          <div class="ty-feed-header">
+                            <div class="ty-feed-user">
+                              <span class="ty-user-avatar">
+                                <a href="/user/13857" title="ttaijing" target="_blank">
+                                  <img src="/image/481208_1477184289.png" alt="头像"></a>
+                              </span>
+                              <span class="ty-feed-user-name">
+                                <a class="ty-user-name-link" href="/user/13857" title="ttaijing" target="_blank">ttaijing</a></span>
+                              <span class="ty-feed-time">2017年4月13日</span></div>
+                            <div class="ty-feed-dream ty-process">
+                              <a href="/user/13857#25664" target="_blank">
+                                <i class="ty-icon-dream-b"></i>打理好家里的花园</a>
+                            </div>
+                          </div>
+                          <div class="ty-feed-body">
+                            <div class="ty-feed-mood">
+                              <div class="ty-feed-content">25-03-17 在菜地里种下多丸咲，溪流，松岛。宵之月长出一棵，移到菜地里了，又播种几颗豌豆 03-04-17 宵之月全都长出来了！！！！两颗在丝瓜旁边，一颗在菜地里</div></div>
+                          </div>
+                          <div class="ty-feed-footer">
+                            <div class="ty-feed-handle clearfix">
+                              <div class="ty-handle">
+                                <a href="">
+                                  <i class="ty-icon-like"></i>
+                                  <span>1</span></a>
+                              </div>
+                              <div class="ty-handle">
+                                <a href="">
+                                  <i class="ty-icon-comment"></i>
+                                  <span>2</span></a>
+                              </div>
+                              <div class="ty-handle ty-more">
+                                <a href="">
+                                  <i class="ty-icon-more"></i>
+                                </a>
+                                <div class="ty-handle-more">
+                                  <ul>
+                                    <li>
+                                      <a href="">举报</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ty-loading">
+                          <img src="/image/loading.gif">加载中...</div></div>
+                    </div>
+                    <div class="ty-profile-container ty-col-4 " data-id="196805" data-type="1">
+                      <!--timeline-->
+                      <div class="ty-profile-timeline-container js-add  " data-id="196805" data-has-more="1" data-start="0"></div>
+                    </div>
+                    <div class="ty-profile-container ty-no-header ty-col-4" data-id="196805" data-type="2">
+                      <!--dream comment & likes--></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ty-profile-dream-right">
+                <div id="ty_dream_info_196805" class="ty-dream-info">
+                  <div class="ty-dream-info-title">梦想信息</div>
+                  <div class="ty-dream-info-row">
+                    <a id="ty_dream_bg_196805" class="ty-dream-bg  " data-action="triggerModifyDreamBg" href="javascript:void(0)" data-id="196805" style="background-image: url(/image/201701021050011483325401!s.png);"></a>
+                  </div>
+                  <div class="ty-dream-info-row">
+                    <div class="ty-dream-info-name">名称</div>
+                    <div class="ty-dream-info-text ty-dream-info-text-title">
+                      <span class="js-content">HTML5+CSS3基础</span></div>
+                  </div>
+                  <div class="ty-dream-info-row ">
+                    <div class="ty-dream-info-name ">描述</div>
+                    <div class="ty-dream-info-text ty-dream-info-text-text ">
+                      <span class="js-content">借了本书，打算在回家前把这本书搞定，打下一点前端的基础</span></div>
+                  </div>
+                  <div class="ty-dream-info-row">
+                    <div class="ty-dream-info-name">状态</div>
+                    <div class="ty-dream-info-text ty-dream-info-text-status ">
+                      <span class="js-content">
+                        <span class="ty-dream-card-status ty-success">成</span></span>
+                    </div>
+                  </div>
+                  <div class="ty-dream-info-row ">
+                    <div class="ty-dream-info-name">时点</div>
+                    <div class="ty-dream-info-text ty-dream-info-text-deadline">
+                      <span class="js-content">2016 年 07 月 07 日</span></div>
+                  </div>
+                  <div class="ty-dream-info-row ">
+                    <div class="ty-dream-info-name">隐私</div>
+                    <div class="ty-dream-info-text ty-lh-0">
+                      <input type="checkbox" id="ty_dream_private_196805" data-id="196805" data-action="modifyDreamPrivate" class="ty-add-dream-private-checkbox js-action-change hidden">
+                      <label for="ty_dream_private_196805" class="ty-add-dream-private   ty-cursor-default ">
+                        <span></span>
+                      </label>
+                      <div class="ty-add-dream-desc-container">
+                        <span class="unchecked">公开</span>
+                        <span class="ty-blue checked">私密</span></div>
+                    </div>
+                  </div>
+                  <div class="ty-dream-info-row noborder">
+                    <div class="ty-dream-info-name">标签</div>
+                    <div class="ty-dream-info-text ty-dream-info-text-tag">
+                      <span class="js-content"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ty-feeds-footer-container">
+                  <div class="ty-app-download">
+                    <a href="/about#download" target="_blank">
+                      <img src="/image/appdownload.png" alt=""></a>
+                  </div>
+                  <div class="ty-footer-right">@2015-2016十年后
+                    <a href="/about" target="_blank">关于</a>·
+                    <a href="/about#team" target="_blank">成员</a>·
+                    <a href="/about#job" target="_blank">加入我们</a>·
+                    <a href="/about#trueeula" target="_blank">用户协议</a>·
+                    <a href="/about#report" target="_blank">媒体报道</a>·
+                    <a href="/about#download" target="_blank">下载应用</a>·
+                    <a href="about" target="_blank">回到旧版</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--通用返回顶部-->
+      <div class="ty-go-top">
+        <a id="ty_go_top_btn" class="ty-go-top-btn js-action" data-id="0" data-action="goToTop" href="javascript:void(0);" title="返回顶部" style="display: none">
+          <span class="arrow"></span>
+          <span class="stick"></span>
+        </a>
+      </div>
+  </body>
+  <script src="/js/go-to-top.js"></script>
+  <script src="/js/user.js"></script>
+
+</html>

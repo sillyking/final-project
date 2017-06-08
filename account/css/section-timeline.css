@@ -1,0 +1,193 @@
+a,
+a:visited {
+    text-decoration: none !important;
+    outline: none;
+    color: #54a6de;
+}
+
+section,
+footer,
+header {
+    display: block;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.ty-login-timeline {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: center center no-repeat;
+    background-size: cover;
+    background-image: url(/image/login_timeline_bg.jpg);
+}
+
+#timeline {
+    background: none !important;
+}
+
+#timeline .container {
+    bottom: 0;
+    right: 0;
+}
+
+#timeline .container .feature {
+    height: 100%;
+    position: absolute;
+}
+
+#timeline .slider .slider-container-mask .slider-container {
+    background: none !important;
+}
+#timeline h1,
+#timeline h2,
+#timeline h3,
+#timeline h4,
+#timeline h5,
+#timeline h6 {
+    color: #fff !important;
+    padding-left: 10px !important;
+    padding-top: 5px !important;
+}
+
+#timeline .slider-item h2,
+#timeline .slider-item h3 {
+    font-family: 'Antic Slab', 'Segoe UI', sans-serif;
+}
+
+#timeline .slider-item h2,
+#timeline .slider-item h3 {
+    color: #00B4FF !important;
+}
+
+#timeline .slider-item p {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff !important;
+}
+
+#timeline div.timenav-background {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+
+#timeline .top-highlight {
+    background-color: transparent !important;
+}
+
+#timeline .toolbar {
+    border: none !important;
+    background: none !important;
+}
+
+#timeline .toolbar div {
+    border: none !important;
+}
+
+#timeline div.navigation {
+    border-top: none;
+    position: absolute !important;
+    z-index: 9999;
+    bottom: 0;
+}
+
+#timeline .navigation .timenav-background .timenav-interval-background {
+    background: #fff;
+}
+
+#timeline .navigation .timenav .content .marker .line {
+    background: #fff;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.05);
+}
+
+.slider .slider-container-mask {
+    width: 100% !important;
+}
+
+.slider .nav-previous .nav-container,
+.slider .nav-next .nav-container {
+    width: 100%;
+}
+.slider .nav-previous .icon {
+    height: 80px !important;
+    background: url("/image/timeline_arrow_left.png") no-repeat !important;
+    background-size: 50% !important;
+    background-position: top right !important;
+}
+
+.slider .nav-next .icon {
+    height: 80px !important;
+    background: url("/image/timeline_arrow_right.png") no-repeat !important;
+    width: 70px !important;
+    background-size: 50% !important;
+}
+.slider .nav-previous .date,
+.slider .nav-previous .title,
+.slider .nav-next .date,
+.slider .nav-next .title {
+    height: 0;
+    overflow: hidden;
+}
+.slider .nav-next:hover .icon {
+    position: relative;
+    right: -5px;
+}
+
+.slider .nav-previous:hover .icon {
+    position: relative;
+    left: -5px;
+}
+
+.slider .nav-previous:hover,
+.slider .nav-next:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+#timeline .navigation .timenav .content .marker .flag {
+    background-image: url("/image/dream_process.png") !important;
+    background-size: 80%;
+}
+
+#timeline .navigation .timenav .content .marker.active .flag {
+    background-image: url("/image/dream_process_hover.png") !important;
+    background-size: 80%;
+}
+
+#timeline .navigation .timenav .content .marker .flag:hover {
+    cursor: pointer;
+    background-image: url("/image/dream_process_hover.png") !important;
+    background-repeat: no-repeat;
+    width: 153px !important;
+    height: 60px !important;
+}
+
+#timeline .navigation .timenav .content .marker .flag:hover .flag-content h3 {
+    color: #333;
+}
+
+#timeline .navigation .timenav .content .marker .flag .flag-content h3 {
+    font-size: 13px !important;
+    text-align: left !important;
+    vertical-align: baseline !important;
+}
+
+
+#timeline .feedback {
+    background-color: #222222;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2) inset;
+    border: none;
+}
+
+#timeline .feedback div {
+    color: #AAAAAA;
+    font-size: 14px !important;
+    font-weight: normal;
+}
