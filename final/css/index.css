@@ -884,6 +884,10 @@ p {
 .ty-login-footer {
 	position: relative;
 }
+.download-btn a {
+	line-height: 35px;
+	text-align: center;
+}
 .footer-link-wechat .footer-link-wechat-hover {
 	position: absolute;
 	height: 0;
